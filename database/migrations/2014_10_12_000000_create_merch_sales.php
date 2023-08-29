@@ -13,9 +13,10 @@ return new class extends Migration
     {
         Schema::create('merch_sales', function (Blueprint $table) {
             $table->id();
-            $table->integer('item_name');
-            $table->string('amount');
-            $table->string('price');
+            $table->string('name');
+            $table->string('item_name');
+            $table->integer('amount');
+            $table->integer('price');
             $table->boolean('is_read')->default(0);
             $table->timestamps();
         });
