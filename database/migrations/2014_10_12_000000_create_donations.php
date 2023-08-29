@@ -16,6 +16,8 @@ return new class extends Migration
             $table->integer('amount');
             $table->string('currency');
             $table->string('donation_message');
+            $table->boolean('is_read')->default(0);
+            $table->timestamps();
         });
     }
 

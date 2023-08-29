@@ -16,6 +16,8 @@ return new class extends Migration
             $table->integer('item_name');
             $table->string('amount');
             $table->string('price');
+            $table->boolean('is_read')->default(0);
+            $table->timestamps();
         });
     }
 
