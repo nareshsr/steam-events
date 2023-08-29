@@ -26,7 +26,8 @@ class MerchSaleDatabaseSeeder extends Seeder
                 'name' => 'RandomUser' . rand(1,500),
                 'item_name' => $item[$rand],
                 'amount' => $itemAmount[$rand],
-                'price' => $itemAmount[$rand] * rand(1,4)
+                'price' => $itemAmount[$rand] * rand(1,4),
+                'created_at' => date_format($currentDate,"Y-m-d H:i:s")
             ]);
         }
     }
